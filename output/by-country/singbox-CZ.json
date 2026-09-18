@@ -6,19 +6,23 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "20e295db-a6af-4006-bfd6-91453f169968",
+      "server": "5.101.114.44",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "057.electrocellco-cf-057.workers.dev",
-        "insecure": false
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "path": "/collection/directory?ed=2560",
         "headers": {
-          "Host": "057.electrocellco-cf-057.workers.dev"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },

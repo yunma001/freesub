@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.97.6
-  port: 443
+  server: 5.101.114.44
+  port: 2053
   udp: true
   type: vless
-  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: 057.electrocellco-cf-057.workers.dev
-  skip-cert-verify: false
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /collection/directory?ed=2560
     headers:
-      Host: 057.electrocellco-cf-057.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
