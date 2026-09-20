@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaohe",
-      "server": "143.246.195.98",
+      "server": "143.246.195.138",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -17,7 +17,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "143.246.195.138",
+      "server": "143.246.195.98",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -61,18 +61,31 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaohe",
-      "server": "143.246.194.60",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "server": "91.193.17.156",
+      "server_port": 9458,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
       "transport": {
-        "type": "ws",
-        "path": "/vless-test"
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaohe",
-      "server": "79.141.174.147",
+      "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -96,25 +109,12 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaohe",
-      "server": "91.193.17.156",
-      "server_port": 9458,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
+      "server": "143.246.194.60",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
+        "type": "ws",
+        "path": "/vless-test"
       }
     },
     {

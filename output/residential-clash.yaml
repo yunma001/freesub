@@ -5,15 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 155.117.19.17
-  port: 443
+  server: 162.159.24.131
+  port: 2082
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   server: 36.224.185.173
   port: 50099
@@ -21,14 +22,7 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  server: 49.254.204.134
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
   server: 104.238.148.149
   port: 443
   udp: true
@@ -42,8 +36,19 @@ proxies:
     path: /about?ed=2560
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  server: 118.167.246.43
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: ios
 - name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
-  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  server: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -51,13 +56,15 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  servername: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: dee2309db4se3g5sds35g4s3dg.oylfmxz.cn
 - name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
-  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  server: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -65,7 +72,7 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
+  servername: dee2309db4944c248b6d4372c6641e25.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -77,8 +84,8 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
 - name: AUTO
@@ -88,8 +95,8 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - xiaohe
 rules:
