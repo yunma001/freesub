@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "172.67.155.189",
+      "server": "ccs2g.pai50288.uk",
       "server_port": 443,
-      "uuid": "7700ff6d-cefb-4768-a806-ec4f63fe3b38",
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
         "enabled": true,
-        "server_name": "3-m13.1b9390a5-6209-45bd-ba0e-057ebb2641c3.kdns.fr",
+        "server_name": "ccs2g.pai50288.uk",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/ED3ZQPu7lqyeDGD58KabZ",
+        "path": "/pai50288",
         "headers": {
-          "Host": "3-m13.1b9390a5-6209-45bd-ba0e-057ebb2641c3.kdns.fr"
+          "Host": "ccs2g.pai50288.uk"
         }
       }
     },

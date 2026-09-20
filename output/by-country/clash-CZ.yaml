@@ -5,24 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 153.76.185.144
-  port: 3090
+  server: 172.67.166.127
+  port: 443
   udp: true
   type: vless
-  uuid: a9a813b7-13ea-45f4-b8de-922b9bdd2db2
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
+  tls: true
+  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/qvzh31VgY6yA9AcUDaTiXVVX?ed=2560
+    headers:
+      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 194.58.43.245
-  port: 2089
-  udp: true
-  type: vless
-  uuid: d144d943-46bd-41ce-af2c-06358c845616
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
   server: 95.85.230.35
   port: 443
   udp: true
@@ -41,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
