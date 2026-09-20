@@ -1,0 +1,35 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 172.67.155.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  tls: true
+  servername: 3-m13.1b9390a5-6209-45bd-ba0e-057ebb2641c3.kdns.fr
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 3-m13.1b9390a5-6209-45bd-ba0e-057ebb2641c3.kdns.fr
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🌐 其他地区 (Other) 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🌐 其他地区 (Other) 01 - xiaohe
+rules:
+- MATCH,PROXIES
