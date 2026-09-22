@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
       "server": "152.53.1.40",
       "server_port": 443,
       "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
@@ -15,7 +23,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -25,23 +33,41 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-      "server": "82.110.60.9",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
-      "server": "67.159.17.39",
-      "server_port": 30443,
-      "password": "1e6fed5b-5edc-4ddb-a268-79d7fae4365c",
+      "server": "50.7.184.190",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "filesconvert.org",
-        "insecure": true
+        "server_name": "austria-dedic1.failspace.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+      "server": "eat8xny7.selqora.ir",
+      "server_port": 51595,
+      "uuid": "d9826bd9-1023-4a3b-895e-3ba9d64061f2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.aparat.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2r94D7GhoZK4inffwafDlMW23Rqj1YVR5871e8EHADs",
+          "short_id": "155e0ffd717f90d8"
+        }
       }
     },
     {
@@ -51,7 +77,8 @@
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
       ]
     },
     {
@@ -60,7 +87,8 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
         "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 03 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
