@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.147
   port: 8443
   udp: true
@@ -19,36 +28,22 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  server: 94.183.170.135
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: cabinet.wwwinternetvideo.click
   port: 443
   udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 109.206.241.10
   port: 449
   udp: true
   type: trojan
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
+  sni: russiapower.accesscam.org
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: est1.loozerp.wiki
-  port: 443
-  udp: true
-  type: vless
-  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
-    short-id: 38018dde3e27335e
-  servername: est1.loozerp.wiki
-  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   server: 94.183.170.135
   port: 8443
@@ -58,19 +53,7 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 185.255.179.11
-  port: 9443
-  udp: true
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  tls: true
-  servername: hub-ee-01.hanvpn.cc
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ee01-grpc-8e47a
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +64,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,6 +74,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
 rules:
 - MATCH,PROXIES
