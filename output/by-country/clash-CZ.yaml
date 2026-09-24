@@ -5,33 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 104.17.147.22
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 401d950d-4f5c-45c7-bf44-8b69acf35f6f
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZUV1OVVaQ2xSWiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 172.64.147.85
-  port: 80
-  udp: true
-  type: vless
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
-  network: ws
-  ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
-    headers:
-      Host: elenaaaaaaaaaa.cloudns.pro
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 153.76.185.148
+  server: 153.76.185.96
   port: 3090
   udp: true
   type: vless
-  uuid: 1552d599-a036-4389-a5c0-bf14dfaddc1a
+  uuid: be2c444d-74a1-407c-a88c-cba06f9a58dc
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -41,15 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES

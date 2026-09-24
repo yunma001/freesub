@@ -4,25 +4,62 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.18.15.103",
+      "server": "www.shopify.com",
       "server_port": 443,
-      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
+      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "server9.9966338.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "yoga-suggesting-recording-calls.trycloudflare.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/imnotarealherox",
+        "path": "/3aa71202-a099-49c1-99fc-6662f3335369-vm",
         "headers": {
-          "Host": "server9.9966338.xyz"
+          "Host": "yoga-suggesting-recording-calls.trycloudflare.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 02 - xiaohe",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 03 - xiaohe",
+      "server": "www.shopify.com",
+      "server_port": 443,
+      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "guanwang.awsno.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hls/cctv5phd.m3u8",
+        "headers": {
+          "Host": "guanwang.awsno.com"
         }
       }
     },
@@ -31,14 +68,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe",
+        "🌐 其他地区 (Other) 02 - xiaohe",
+        "🌐 其他地区 (Other) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
