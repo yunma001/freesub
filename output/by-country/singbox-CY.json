@@ -6,23 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-      "server": "api-1.hysteria.ltd",
-      "server_port": 4443,
-      "uuid": "73606ef5-51ab-4182-8ae8-41a50e1a9d52",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-1.hysteria.ltd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
       "server": "194.76.154.31",
       "server_port": 40443,
       "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
@@ -31,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -42,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
       "server": "132.243.242.97",
       "server_port": 9543,
       "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
@@ -52,7 +35,7 @@
         "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -67,8 +50,7 @@
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe"
       ]
     },
     {
@@ -76,8 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
