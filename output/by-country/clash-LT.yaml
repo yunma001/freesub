@@ -6,25 +6,25 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
   server: 195.238.126.20
+  port: 9078
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
+  server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
   server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaohe
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaohe
   server: 195.238.126.20
   port: 9001
@@ -34,11 +34,11 @@ proxies:
   password: UkXRsXvR6buDMG2Y
 - name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaohe
   server: 195.238.126.20
-  port: 9078
+  port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
+  password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaohe
   server: 195.238.126.20
   port: 9002
@@ -68,6 +68,13 @@ proxies:
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
+  server: 195.238.126.84
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
+- name: 🇱🇹 立陶宛 (Lithuania) 11 - xiaohe
   server: 94.176.234.161
   port: 443
   udp: true
@@ -79,7 +86,7 @@ proxies:
     public-key: UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8
     short-id: dbb2ef1c7c
   servername: www.intel.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +102,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +118,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 09 - xiaohe
   - 🇱🇹 立陶宛 (Lithuania) 10 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 11 - xiaohe
 rules:
 - MATCH,PROXIES
