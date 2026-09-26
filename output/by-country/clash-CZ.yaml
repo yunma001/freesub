@@ -5,54 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.97.6
-  port: 8080
+  server: 153.76.185.104
+  port: 3090
   udp: true
   type: vless
-  uuid: 4908acbe-485f-4e1c-bb11-5dd04b9f7e88
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiRjhycEV5WUpJTGZpQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: restless-base-fe24.alirezahabibi20009.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 172.67.191.121
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: 47hr9isj-655383snd63hjap38q6t.k-f3vpqaltfsxbtaxe.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/V2VWNDZAAEIdXVjOCkLfJnefnR5Pum?ed=2560
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 13.143.181.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7a8d2c3f-d6dd-0004-81d8-cff23d8364ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38
-  servername: msk1.maxtelemost.com
-  client-fingerprint: safari
+  uuid: 6bd9b04b-17de-4f05-b8b8-e5f2a0a649c1
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
 rules:
 - MATCH,PROXIES
