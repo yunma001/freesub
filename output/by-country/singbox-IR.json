@@ -15,7 +15,7 @@
         "server_name": "table.vkroom-it-service.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -27,63 +27,14 @@
     {
       "type": "vless",
       "tag": "🇮🇷 IR 02 - xiaohe",
-      "server": "bg.masterpgd.com",
-      "server_port": 6016,
-      "uuid": "d207c6c8-a278-487c-b06e-f1fc89304e6d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk",
-          "short_id": "1779b108c9eb4da7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR 03 - xiaohe",
-      "server": "bg.masterpgd.com",
-      "server_port": 6016,
-      "uuid": "e19f406e-0f0f-4abd-9861-a3d2d213b650",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk",
-          "short_id": "1779b108c9eb4da7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇷 IR 04 - xiaohe",
-      "server": "bg.masterpgd.com",
-      "server_port": 6016,
-      "uuid": "1cc6bd10-e414-4171-9220-09aaba23a6fa",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk",
-          "short_id": "1779b108c9eb4da7"
+      "server": "185.143.233.130",
+      "server_port": 2052,
+      "uuid": "e0ff8a9b-dad3-4671-baf4-c8d466d1eb48",
+      "transport": {
+        "type": "ws",
+        "path": "/eyurri",
+        "headers": {
+          "Host": "afra4.nimbaha9.ir"
         }
       }
     },
@@ -93,9 +44,7 @@
       "outbounds": [
         "auto",
         "🇮🇷 IR 01 - xiaohe",
-        "🇮🇷 IR 02 - xiaohe",
-        "🇮🇷 IR 03 - xiaohe",
-        "🇮🇷 IR 04 - xiaohe"
+        "🇮🇷 IR 02 - xiaohe"
       ]
     },
     {
@@ -103,9 +52,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇷 IR 01 - xiaohe",
-        "🇮🇷 IR 02 - xiaohe",
-        "🇮🇷 IR 03 - xiaohe",
-        "🇮🇷 IR 04 - xiaohe"
+        "🇮🇷 IR 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
