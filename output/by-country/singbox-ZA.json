@@ -6,78 +6,22 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 01 - xiaohe",
-      "server": "139.84.247.164",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "tfAcRikawhNoZAhu"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - xiaohe",
       "server": "102.37.156.224",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 02 - xiaohe",
+      "server": "139.84.247.164",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tfAcRikawhNoZAhu"
+    },
+    {
       "type": "vless",
       "tag": "🇿🇦 南非 (South Africa) 03 - xiaohe",
-      "server": "139.84.246.240",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform103",
-        "headers": {
-          "Host": "platform103.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 04 - xiaohe",
-      "server": "139.84.245.78",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform107",
-        "headers": {
-          "Host": "platform107.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 05 - xiaohe",
-      "server": "139.84.247.122",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 06 - xiaohe",
-      "server": "139.84.250.128",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform109",
-        "headers": {
-          "Host": "platform109.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 07 - xiaohe",
       "server": "139.84.243.189",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -91,35 +35,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 08 - xiaohe",
-      "server": "139.84.246.73",
+      "tag": "🇿🇦 南非 (South Africa) 04 - xiaohe",
+      "server": "139.84.245.154",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113",
+        "path": "/platform108",
         "headers": {
-          "Host": "platform113.halalkhor.info"
+          "Host": "platform108.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 09 - xiaohe",
-      "server": "139.84.228.106",
+      "tag": "🇿🇦 南非 (South Africa) 05 - xiaohe",
+      "server": "139.84.245.78",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform117",
+        "path": "/platform107",
         "headers": {
-          "Host": "platform117.halalkhor.info"
+          "Host": "platform107.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 10 - xiaohe",
+      "tag": "🇿🇦 南非 (South Africa) 06 - xiaohe",
       "server": "139.84.249.25",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -133,7 +77,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 11 - xiaohe",
+      "tag": "🇿🇦 南非 (South Africa) 07 - xiaohe",
+      "server": "139.84.228.106",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform117",
+        "headers": {
+          "Host": "platform117.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 08 - xiaohe",
+      "server": "platform103.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform103",
+        "headers": {
+          "Host": "platform103.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 09 - xiaohe",
       "server": "139.84.234.100",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -147,8 +119,47 @@
     },
     {
       "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 10 - xiaohe",
+      "server": "platform115.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform115"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 11 - xiaohe",
+      "server": "platform109.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform109",
+        "headers": {
+          "Host": "platform109.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇿🇦 南非 (South Africa) 12 - xiaohe",
-      "server": "139.84.250.125",
+      "server": "139.84.246.73",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 13 - xiaohe",
+      "server": "platform106.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
@@ -156,20 +167,6 @@
         "path": "/platform106",
         "headers": {
           "Host": "platform106.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 13 - xiaohe",
-      "server": "139.84.245.154",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform108",
-        "headers": {
-          "Host": "platform108.halalkhor.info"
         }
       }
     },
