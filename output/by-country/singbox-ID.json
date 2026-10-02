@@ -6,42 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
-      "server": "103.172.197.3",
-      "server_port": 16006,
-      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
-      "server": "az-1.linkaa.xyz",
-      "server_port": 55386,
-      "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/game/resources",
-        "headers": {
-          "Host": "az-1.linkaa.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇩 印尼 (Indonesia) 03 - xiaohe",
       "server": "103.172.197.2",
       "server_port": 29172,
       "uuid": "3977434d-6a9b-4858-8ced-80326ba5e367",
@@ -51,7 +15,7 @@
         "server_name": "aws.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -61,21 +25,43 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇩 印尼 (Indonesia) 04 - xiaohe",
-      "server": "188.114.97.6",
+      "type": "vless",
+      "tag": "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
+      "server": "34.128.84.173",
       "server_port": 443,
-      "password": "018b8e7b-7813-4dcb-84a5-3c98f1521e00",
+      "uuid": "e440fa81-fe9d-4ca1-b711-f7b72c3d79ed",
       "tls": {
         "enabled": true,
-        "server_name": "id1.nathaya.web.id",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/trojan",
-        "headers": {
-          "Host": "id1.nathaya.web.id"
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-9nhbWBjFTNIE5q0kg76hjyzCS2giPfZ-fbd8xvmRX0",
+          "short_id": "409192cee72716d7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇩 印尼 (Indonesia) 03 - xiaohe",
+      "server": "103.172.197.3",
+      "server_port": 16006,
+      "uuid": "f8c9d2a1-da40-4f90-b671-11772a0b13d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU",
+          "short_id": ""
         }
       }
     },
@@ -86,8 +72,7 @@
         "auto",
         "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
         "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 03 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 04 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 03 - xiaohe"
       ]
     },
     {
@@ -96,8 +81,7 @@
       "outbounds": [
         "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
         "🇮🇩 印尼 (Indonesia) 02 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 03 - xiaohe",
-        "🇮🇩 印尼 (Indonesia) 04 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
