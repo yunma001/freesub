@@ -6,6 +6,32 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "104.21.15.145",
+      "server_port": 2053,
+      "uuid": "dc1e9f00-c064-4870-9bfc-463db50257d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "RESTlESs-MoON-dD68RidaM-tOo-In-MAmLEkat.hGtghFF67tdFHUt3.WORkerS.DEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
       "server": "85.117.235.50",
       "server_port": 443,
       "uuid": "f4d71fd6-1c25-4748-836b-1dbda9268039",
@@ -15,7 +41,7 @@
         "server_name": "cz1.animeteka.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +55,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe",
+        "🇨🇿 捷克 (Czech) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
